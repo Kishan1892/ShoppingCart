@@ -35,10 +35,6 @@ public class Item implements Comparable<Item> {
 		return reserved;
 	}
 
-	public void setReserved(int reserved) {
-		this.reserved = reserved;
-	}
-
 	public void adjustStock(int value) {
 		int newStock = quantity + value;
 		if (newStock >= 0) {
